@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <com.github.ivbaranov.mli.MaterialLetterIcon
+            android:id="@+id/letter_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:mli_shape_color="@color/TitleBack" />
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/review_dimens"
+            android:paddingStart="@dimen/review_dimens"
+            android:text="@string/test_author"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/review_dimens"
+        android:layout_marginLeft="@dimen/review_dimens"
+        android:layout_marginRight="@dimen/review_dimens"
+        android:layout_marginStart="@dimen/review_dimens"
+        android:text="@string/test_content" />
+</LinearLayout>

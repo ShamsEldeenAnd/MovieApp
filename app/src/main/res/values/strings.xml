@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Pop Movies</string>
+    <string name="error_message">Connection Failed !</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="release_date">20-10-2018</string>
+    <string name="rate">10</string>
+    <string name="overview">overview</string>
+    <string name="sort_by_popularity">Sort by Popularity</string>
+    <string name="sort_by_top_rate">Sort by top Rate</string>
+    <string name="movie_image">Movie Image</string>
+    <string name="choose_app">choose application</string>
+    <string name="my_favourites">My Favourites</string>
+    <string name="mark_as_n_favourites">Mark as \n  favourites</string>
+    <string name="test_content">lorem is this is test content</string>
+    <string name="test_author">islam shams</string>
+    <string name="trailer_test_txt">Trailer 1</string>
+</resources>

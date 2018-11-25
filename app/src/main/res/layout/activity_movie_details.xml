@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/org_title"
+                style="@style/Base.TextAppearance.AppCompat.Title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:background="@color/TitleBack"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="@string/movie_title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/title_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/local_margin"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:id="@+id/movie_img"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/img_height"
+                    android:layout_weight="5"
+                    android:contentDescription="@string/movie_image"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/release_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/local_padding"
+                        android:text="@string/release_date"
+                        android:textSize="@dimen/date_size" />
+
+                    <TextView
+                        android:id="@+id/vote_average"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/local_padding"
+                        android:text="@string/rate"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <Button
+                        android:id="@+id/fav_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn_selector"
+                        android:onClick="saveMovie"
+                        android:padding="@dimen/btn_padding"
+                        android:text="@string/mark_as_n_favourites"
+                        android:textColor="@color/TitleBack" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/local_margin"
+                app:cardElevation="@dimen/common_elavation">
+
+                <TextView
+                    android:id="@+id/overview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:padding="@dimen/local_padding"
+                    android:text="@string/overview" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/trailers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/local_padding"
+                android:text="Trailers : "
+                android:textColor="@color/TitleBack"
+                android:textSize="@dimen/trailer_txt_size" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/trailer_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
