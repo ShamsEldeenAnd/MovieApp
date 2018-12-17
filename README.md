@@ -13,3 +13,15 @@ and basic usage for `Android Architecture Components`
 3-set it with your own key <br />
 
 **Note** : you can visit (https://developers.themoviedb.org/)  for more information 
+
+## screenshots
+<p float="left">
+<img src="https://github.com/ShamsEldeenAnd/images/blob/master/moviesAppimgs/Screenshot_20181217-133925.jpg" width="250" height="420" />
+<img src="https://github.com/ShamsEldeenAnd/images/blob/master/moviesAppimgs/Screenshot_20181217-133928.jpg" width="250" height="420" />
+<img src="https://github.com/ShamsEldeenAnd/images/blob/master/moviesAppimgs/Screenshot_20181217-133938.jpg" width="250" height="420" />
+  <img src="https://github.com/ShamsEldeenAnd/images/blob/master/moviesAppimgs/Screenshot_20181217-133942.jpg" width="250" height="420" />
+    <img src="https://github.com/ShamsEldeenAnd/images/blob/master/moviesAppimgs/Screenshot_20181217-134000.jpg" width="250" height="420" />
+      <img src="https://github.com/ShamsEldeenAnd/images/blob/master/moviesAppimgs/Screenshot_20181217-134010.jpg" width="250" height="420" />
+        <img src="https://github.com/ShamsEldeenAnd/images/blob/master/moviesAppimgs/Screenshot_20181217-134115.jpg" width="250" height="420" />
+</p>
+
